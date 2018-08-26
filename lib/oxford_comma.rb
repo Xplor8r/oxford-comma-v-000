@@ -7,5 +7,5 @@ def oxford_comma(array)
   else
     array.join
   end
-  array
+  array.join
 end
