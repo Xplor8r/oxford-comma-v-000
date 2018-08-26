@@ -1,5 +1,5 @@
 def oxford_comma(array)
-  if array.length > 3
+  if array.length > 2
     array.join(', ')
     array.push("and #{array.last}")
   elsif array.length == 1
