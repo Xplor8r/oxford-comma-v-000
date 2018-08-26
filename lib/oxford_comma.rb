@@ -1,6 +1,7 @@
 def oxford_comma(array)
+  new array = array
   if array.length >= 3
-    array.last
+    array.pop
     array = array << "and #{}"
     array.join(', ')
   elsif array.length == 2
