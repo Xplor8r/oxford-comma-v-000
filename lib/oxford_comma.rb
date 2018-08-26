@@ -1,12 +1,8 @@
 def oxford_comma(array)
-  new_array = array
-  if array.length >= 3
-    array.pop
-    new_array << "and #{array[-1]}"
-
-    array.join(', ')
-  elsif array.length == 2
+  if array.length >= 2
     array.join(' and ')
+  elsif array.length > 2
+    array[-1].insert(0, 'and')
   else
     array.join
   end
